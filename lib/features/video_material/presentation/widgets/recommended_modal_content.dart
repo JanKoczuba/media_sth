@@ -29,6 +29,7 @@ class RecommendedModalContent extends StatelessWidget {
               },
             ),
           ),
+
           Flexible(
             child: ListView.builder(
               padding: EdgeInsets.zero,
