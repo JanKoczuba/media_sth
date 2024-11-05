@@ -1,0 +1,4 @@
+enum VideoMaterialsScreenEnum {
+  showVideo,
+  showOnlyRecommendation,
+}

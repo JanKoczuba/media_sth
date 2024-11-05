@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 import 'package:media_sth/core/di/di.dart';
+import 'package:media_sth/features/video_material/presentation/bloc/video_material_cubit.dart';
 import 'package:media_sth/features/video_material/presentation/video_material_page.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -40,7 +42,10 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const VideoMaterialPage(),
+      home: BlocProvider(
+        create: (context) => di<VideoMaterialCubit>(),
+        child: const VideoMaterialPage(),
+      ),
     );
   }
 }
