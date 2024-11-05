@@ -12,4 +12,6 @@ abstract class AppPaddings {
   static const cardText = EdgeInsets.all(8);
   static const roundedIcon = EdgeInsets.all(4);
   static const recommendedCardIcon = EdgeInsets.all(8);
+  static const appBarRoundedIcon = EdgeInsets.all(8);
+
 }

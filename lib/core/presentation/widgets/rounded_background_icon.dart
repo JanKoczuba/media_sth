@@ -5,7 +5,7 @@ import 'package:media_sth/core/presentation/styles/app_padings.dart';
 class RoundedBackgroundIcon extends StatelessWidget {
   const RoundedBackgroundIcon({
     required this.icon,
-    required this.showBorder,
+    this.showBorder = false,
     super.key,
   });
 
