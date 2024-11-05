@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:media_sth/core/app/video_assets.dart';
+import 'package:media_sth/features/video_material/presentation/widgets/recommended_modal.dart';
 import 'package:media_sth/features/video_material/presentation/widgets/video_content.dart';
 import 'package:video_player/video_player.dart';
 
@@ -51,6 +52,12 @@ class _VideoMaterialPageState extends State<VideoMaterialPage> {
               controller: videoPlayerController,
             ),
           ),
+          Positioned(
+              right: 4,
+              left: 4,
+              top: (screenHeight / 3.5),
+              bottom: 0,
+              child: const RecommendedModal()),
         ],
       ),
     );
