@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:media_sth/core/presentation/styles/app_borders.dart';
 import 'package:media_sth/core/presentation/styles/app_colors.dart';
+import 'package:media_sth/features/video_material/presentation/widgets/recommended_modal_header.dart';
 
 class RecommendedModal extends StatelessWidget {
   const RecommendedModal({super.key});
@@ -15,7 +16,9 @@ class RecommendedModal extends StatelessWidget {
       child: const SingleChildScrollView(
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          children: [],
+          children: [
+            RecommendedModalHeader(),
+          ],
         ),
       ),
     );
