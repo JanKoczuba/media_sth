@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:media_sth/core/app/video_assets.dart';
+import 'package:media_sth/core/presentation/widgets/app_bars/default_app_bar.dart';
+import 'package:media_sth/core/utils/context_extension.dart';
 import 'package:media_sth/features/video_material/presentation/widgets/recommended_modal.dart';
 import 'package:media_sth/features/video_material/presentation/widgets/video_content.dart';
 import 'package:video_player/video_player.dart';
@@ -41,6 +43,10 @@ class _VideoMaterialPageState extends State<VideoMaterialPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: DefaultAppBar(
+        title: Text(context.localizations.logo.toUpperCase()),
+      ),
       body: Stack(
         children: [
           Positioned(
