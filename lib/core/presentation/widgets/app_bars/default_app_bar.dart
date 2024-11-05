@@ -29,7 +29,7 @@ class DefaultAppBar extends AppBar {
             ),
             const Padding(
               padding: AppPaddings.appBarRoundedIcon,
-              child: const RoundedBackgroundIcon(
+              child: RoundedBackgroundIcon(
                 icon: Icon(Icons.search),
               ),
             ),
