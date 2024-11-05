@@ -5,4 +5,11 @@ abstract class AppPaddings {
     top: 8,
     left: 4,
   );
+  static const recommendedActionCard = EdgeInsets.only(
+    bottom: 4,
+    right: 4,
+  );
+  static const cardText = EdgeInsets.all(8);
+  static const roundedIcon = EdgeInsets.all(4);
+  static const recommendedCardIcon = EdgeInsets.all(8);
 }

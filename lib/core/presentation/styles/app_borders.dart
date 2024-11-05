@@ -6,4 +6,5 @@ abstract class AppBorders {
     topRight: _radius12,
     topLeft: _radius12,
   );
+  static const recommendedActionCardBorder = BorderRadius.all(_radius12);
 }

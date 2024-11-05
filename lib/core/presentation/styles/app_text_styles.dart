@@ -8,4 +8,10 @@ abstract class AppTextStyles {
     fontWeight: FontWeight.w500,
     height: 1.5,
   );
+  static const titleMedium = TextStyle(
+    fontSize: 16,
+    color: AppColors.black,
+    fontWeight: FontWeight.w500,
+    height: 1.5,
+  );
 }
